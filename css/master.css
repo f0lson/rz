@@ -1,0 +1,287 @@
+/**********************************
+Font import
+**********************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+h1,h2,h3,h4,h5,p,a,li,span,label,input, .card-header {
+    font-family: overpass, sans-serif;
+}
+
+/**********************************
+General styles
+**********************************/
+
+html,
+body {
+    height: 100%;
+}
+
+
+/**********************************
+Container styles
+**********************************/
+.container {
+    max-width: 1170px;
+    padding: 0 8px;
+}
+
+main {
+    margin-top: 76px;
+    padding-bottom: 70px;
+    flex: 1 0 auto;
+}
+
+/**********************************
+Navbar styles
+**********************************/
+
+.navbar {
+    min-height: 76px;
+    align-items: center;
+}
+
+.navbar > .container,
+footer > .container {
+    padding: 0;
+}
+
+.nav-link,
+.dropdown-item {
+    color: #49848E;
+}
+
+.nav-link {
+    font-weight: 300;
+}
+
+.nav-link:hover {
+    color: #49848E;
+}
+
+.dropdown-item:hover {
+    color: #D86B14;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    border-top: 4px solid #D86B14;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: none;
+}
+
+.nav-login > a {
+    color: #D86B14;
+}
+
+.nav-login > a:hover {
+    color: #D86B14;
+}
+
+
+/**********************************
+heading styles
+**********************************/
+.header-green {
+    color: #49848E;
+}
+
+/**********************************
+img styles
+**********************************/
+
+.profile-img {
+    margin-bottom: 1rem;
+    max-width:300px;
+    height: auto;
+    border-right: 50%;
+}
+
+/**********************************
+Jumbotron styles
+**********************************/
+.jumbotron {
+    background: #eee url('https://rentzootws.wpengine.com/wp-content/uploads/2020/02/rentzoot-get-started.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0px 2px 3px rgba(0,0,0,.2);
+}
+
+/**********************************
+Card styles
+**********************************/
+.card {
+    box-shadow: 0px 2px 3px rgba(0,0,0,.2);
+    margin-bottom: 1rem;
+}
+
+/**/
+.card-header {
+    background-color: #49848E;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.card,
+.card-header {
+    border-radius: 0 !important;
+}
+
+/**********************************
+Button styles
+**********************************/
+.btn {
+    padding: .75rem;
+    background-color: #fff;
+    border-radius: 0;
+    transition: 200ms all ease;
+}
+
+.btn-orange,
+button[type=submit] {
+    border-color: #D86B14;
+    color: #D86B14;
+}
+
+
+.btn-orange-active,
+.btn-orange:hover,
+button[type=submit]:hover {
+    background-color: #D86B14;
+    color: #fff;
+}
+
+.btn-orange-active:hover {
+    color: #fff;
+}
+
+.profile-progress .btn{
+    font-size: 1rem;
+}
+
+/**********************************
+Form styles
+**********************************/
+
+.profile-progress {
+    padding-top: 50px;
+}
+
+input[type=text],
+input[type=date] {
+    border: 1px solid #49848E;
+    border-radius: 0;
+}
+
+input[type=file] {
+    border: none;
+}
+
+/**********************************
+Property page styles
+**********************************/
+
+.property-img {
+    transition: 200ms all ease;
+}
+
+.property-img:hover {
+    transform: scale(1.02);
+}
+
+.apply {
+    margin-top: 2rem;
+}
+
+/**********************************
+Footer styles
+**********************************/
+footer {
+    padding: 50px 0 0;
+    background: #49848e;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    flex-shrink: none;
+}
+
+footer img {
+    width: 200px;
+}
+
+.footer-address,
+.footer-phone {
+    text-align: center;
+}
+
+.footer-address {
+    padding-top: 20px;
+    margin-bottom: 8px;
+}
+
+.footer-nav {
+    justify-content: center;
+}
+
+.footer-nav .nav-link {
+    color: #FFF;
+}
+
+
+@media screen and (min-width: 769px) {
+
+    .dropdown-menu {
+        font-size: 15.3px;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .nav-middle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-login {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .nav-item {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 1rem;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+
+    .footer-info {
+        padding: 20px 0 48px;
+    }
+
+    .footer-address,
+    .footer-phone {
+        text-align: left;
+    }
+
+    .footer-nav {
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="4GaqwQTqu5fTy0h2sDTeNnwWgc72uQGNq8dCsczf">
+
+    <title>RentZoot</title>
+
+    <!-- Scripts -->
+    <script src="https://rentzoot.avn.guru/js/app.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="https://rentzoot.avn.guru/css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/master.css">
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="https://rentzoot.avn.guru">
+                    <img src="https://rentzootws.wpengine.com/wp-content/uploads/2020/02/rentzoot-logo-hz.png" width="190" height="40" class="d-inline-block align-top" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
+
+                    </ul>
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Authentication Links -->
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                Forrest Olson
+                                <span class="caret"></span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <h6 class="dropdown-header">
+                                    Background check:
+                                    Passed
+                                </h6>
+
+                                <div class="dropdown-divider"></div>
+
+                                <a class="dropdown-item" href="https://rentzoot.avn.guru/tenant/dashboard">
+                                    Dashboard
+                                </a>
+
+                                <a class="dropdown-item" href="https://rentzoot.avn.guru/tenant/profile">
+                                    My Profile
+                                </a>
+
+                                <a class="dropdown-item" href="https://rentzoot.avn.guru/tenant/share-links">
+                                    Profile sharing
+                                </a>
+
+                                <a class="dropdown-item" href="https://rentzoot.avn.guru/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+                                <form id="logout-form" action="https://rentzoot.avn.guru/logout" method="POST" style="display: none;">
+                                    <input type="hidden" name="_token" value="Iwd3VF2lWMzsUKUAukOB3sT7t1lkz36NQRzV0MzU"> </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="py-4">
+            <div class="container">
+                <div class="row justify-content-center profile-progress">
+                    <div class="col-md-2">
+                        <a href="https://rentzoot.avn.guru/tenant/profile/step1">
+                            <div class="btn  btn-orange">1. Personal Info</div>
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://rentzoot.avn.guru/tenant/profile/step2">
+                            <div class="btn   btn-orange-active ">2. Contacts</div>
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://rentzoot.avn.guru/tenant/profile/step3">
+                            <div class="btn   btn-orange ">3. Employment</div>
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://rentzoot.avn.guru/tenant/profile/step4">
+                            <div class="btn   btn-orange ">4. Rental History</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">Contacts</div>
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <form action="https://rentzoot.avn.guru/tenant/profile/step2" method="POST" role="form" enctype="multipart/form-data">
+                                                <input type="hidden" name="_token" value="4GaqwQTqu5fTy0h2sDTeNnwWgc72uQGNq8dCsczf">
+                                                <div class="form-group row">
+                                                    <div class="col">
+                                                        <label for="phone" class="col-form-label">Phone</label>
+                                                        <input id="phone" type="text" class="form-control" name="phone" value="6085130449">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="emergency_phone" class="col-form-label">Emergency Phone</label>
+                                                        <input id="emergency_phone" type="text" class="form-control" name="emergency_phone" value="7083895180">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="emergency_manager" class="col-form-label">Emergency Contact Name</label>
+                                                        <input id="emergency_manager" type="text" class="form-control" name="emergency_manager" value="Forrest Number 2">
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group row mb-0 mt-5">
+                                                    <div class="col-md-8 offset-md-4">
+                                                        <button type="submit" class="btn">Save</button>
+                                                        <a href="https://rentzoot.avn.guru/tenant/profile">
+                                                            <div class="btn btn-light">Back to Profile</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="https://rentzootws.wpengine.com/wp-content/uploads/2020/02/Logo-h-n-300x63.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="row footer-info">
+                    <div class="col-md-6">
+                        <p class="footer-address">1962 Raymond Drive, Northbrook, IL 60062</p>
+                        <p class="footer-phone">(855) 930-2555</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav footer-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Benefits</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Learn More</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

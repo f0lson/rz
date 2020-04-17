@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="zi9gigdLS8cZzn3wB8VZPkZ3d0pTzABAA07KW2Pz">
+
+    <title>RentZoot</title>
+
+    <!-- Scripts -->
+    <script src="https://rentzoot.avn.guru/js/app.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="https://rentzoot.avn.guru/css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/master.css">
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="https://rentzoot.avn.guru">
+                    <img src="https://rentzootws.wpengine.com/wp-content/uploads/2020/02/rentzoot-logo-hz.png" width="190" height="40" class="d-inline-block align-top" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
+
+                    </ul>
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Authentication Links -->
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                Forrest Olson
+                                <span class="caret"></span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <h6 class="dropdown-header">
+                                    Background check:
+                                    Passed
+                                </h6>
+
+                                <div class="dropdown-divider"></div>
+
+                                <a class="dropdown-item" href="https://rentzoot.avn.guru/tenant/dashboard">
+                                    Dashboard
+                                </a>
+
+                                <a class="dropdown-item" href="https://rentzoot.avn.guru/tenant/profile">
+                                    My Profile
+                                </a>
+
+                                <a class="dropdown-item" href="https://rentzoot.avn.guru/tenant/share-links">
+                                    Profile sharing
+                                </a>
+
+                                <a class="dropdown-item" href="https://rentzoot.avn.guru/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+                                <form id="logout-form" action="https://rentzoot.avn.guru/logout" method="POST" style="display: none;">
+                                    <input type="hidden" name="_token" value="Iwd3VF2lWMzsUKUAukOB3sT7t1lkz36NQRzV0MzU"> </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="row justify-content-center profile-progress">
+                    <div class="col-md-2">
+                        <a href="https://rentzoot.avn.guru/tenant/profile/step1">
+                            <div class="btn  btn-orange-active">1. Personal Info</div>
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://rentzoot.avn.guru/tenant/profile/step2">
+                            <div class="btn   btn-orange ">2. Contacts</div>
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://rentzoot.avn.guru/tenant/profile/step3">
+                            <div class="btn   btn-orange ">3. Employment</div>
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://rentzoot.avn.guru/tenant/profile/step4">
+                            <div class="btn   btn-orange ">4. Rental History</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">Personal info</div>
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <form action="https://rentzoot.avn.guru/tenant/profile/step1" method="POST" role="form" enctype="multipart/form-data">
+                                                <input type="hidden" name="_token" value="zi9gigdLS8cZzn3wB8VZPkZ3d0pTzABAA07KW2Pz">
+                                                <div class="form-group row">
+                                                    <div class="col">
+                                                        <label for="profile_image" class="col-md-4 col-form-label">Profile Image</label>
+                                                        <input id="profile_image" type="file" class="form-control" name="profile_image">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row">
+                                                    <div class="col">
+                                                        <label for="first_name" class="col-form-label">First Name</label>
+                                                        <input id="first_name" type="text" class="form-control" name="first_name" value="Forrest" required>
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="last_name" class="col-form-label">Last Name</label>
+                                                        <input id="last_name" type="text" class="form-control" name="last_name" value="Olson">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="birthday" class="col-form-label">Date of Birth</label>
+                                                        <input id="birthday" type="date" value="1970-02-10" name="birthday" min="1900-01-01" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col">
+                                                        <label for="ssn" class="col-form-label">Last 4 SSN digits</label>
+                                                        <input id="ssn" type="text" class="form-control" name="ssn" maxlength="4" value="9999" required>
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="driver_license" class="col-form-label">Driver License</label>
+                                                        <input id="driver_license" type="text" class="form-control" name="driver_license" value="12345654949290">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row mb-0 mt-5">
+                                                    <div class="col-md-8 offset-md-4">
+                                                        <button type="submit" class="btn">Save</button>
+                                                        <a href="https://rentzoot.avn.guru/tenant/profile">
+                                                            <div class="btn btn-ghost">Back to Profile</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="https://rentzootws.wpengine.com/wp-content/uploads/2020/02/Logo-h-n-300x63.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="row footer-info">
+                    <div class="col-md-6">
+                        <p class="footer-address">1962 Raymond Drive, Northbrook, IL 60062</p>
+                        <p class="footer-phone">(855) 930-2555</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav footer-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Benefits</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Learn More</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
